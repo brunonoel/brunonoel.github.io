@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Macondo&family=Yanone+Kaffeesatz&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Yanone Kaffeesatz';
+}
+
+html {
+    /*permite deslizar cuando hago click en los links del menu*/
+    scroll-behavior: smooth;
+}
+
+/*Menu*/
+.contenedor-header {
+    background: #a0fb0e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+}
+.contenedor-header header .logo a {
+    font-family:'Yanone Kaffeesatz';
+    font-size: 36px;
+    color: #7052ff;
+    text-decoration: none;
+}
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #7052ff;
+    margin: 0 15px;
+    padding: 3px;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #ff7360;
+}
+.nav-responsive {
+    background-color: #7052ff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*Inicio*/
+
+.inicio {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner h1 {
+    margin-top: 30px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2 {
+    margin-top: 10px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 3px 2px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover {
+    background-color: #1Cb698;
+}
+
+/*Sobre Mi*/
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 100px 20px;
+}
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Yanone Kaffeesatz';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .fila ul{
+    list-style: none;
+}
+
+.sobremi .fila ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila ul li strong{
+    color:#7052ff;
+    width: 130px;
+}
+
+/*Habilidades*/
+.habilidades {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.habilidades .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.habilidades h2{
+    font-size: 48px;
+    font-family: 'Yanone Kaffeesatz';
+    text-align: center;
+    padding: 20px 0;
+}
+.habilidades .fila ul{
+    list-style: none;
+}
+
+.habilidades .fila ul li{
+    margin: 12px 0;
+    font: 20px;
+}
+
+/*Experiencia*/
+.experiencia {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.experiencia .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.experiencia h2{
+    font-size: 48px;
+    font-family: 'Yanone Kaffeesatz';
+    text-align: center;
+    padding: 20px 0;
+}
+.experiencia .fila{
+    display: flex;
+}
+.experiencia .fila .col {
+    width: 50%;
+}
+.experiencia .fila .col h3{
+    font-size: 28px;
+    font-family:'Yanone Kaffeesatz';
+    margin-bottom: 25px;
+    color:#7052ff;
+}
+.experiencia .fila .col ul{
+    list-style: none;
+}
+.experiencia .fila .col ul li{
+    margin: 12px 0;
+}
+.experiencia .fila .col ul strong {
+    color:#7052ff;
+    font-weight: bold;
+}
+
+/*Educacion*/
+.educacion {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 80px 20px;
+}
+
+.educacion .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.educacion h2{
+    font-size: 48px;
+    font-family: 'Yanone Kaffeesatz';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.educacion .fila h3 {
+    font-size: 28px;
+    font-family:'Yanone Kaffeesatz';
+    margin-bottom: 25px;
+    color:#7052ff;
+}
+
+/*Contacto*/
+
+.contacto {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 180px 20px;
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Yanone Kaffeesatz';
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+
+
+/*Responsivo*/
+@media screen and (max-width:980px) {
+    nav {
+        display: none;
+    }
+    .nav-responsive {
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;  
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul {
+        display: block !important;
+    }
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sobremi .fila {
+        display: block;
+    }
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+    .habilidades .fila{
+        display: block;
+    }
+    .habilidades .fila .col {
+        width: 100%;
+    }
+    .educacion .fila {
+        display: block;
+    }
+    .experiencia .fila {
+        display: block;
+    }
+    .contacto .fila {
+        display: block;
+        width: 100%;
+    }
+
+    .contacto .fila .contenedor-img{
+        max-width: 100%;
+    }
+
+    .contacto .fila .contenedor-img img{ 
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        background-color: #1e2326;
+          
+    }
+}
+
